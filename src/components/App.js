@@ -7,17 +7,20 @@ const App = () => {
   function ip1(e){
    
     setnumber1(+e.target.value)
-    setTotal(number1 +number2);
+    // setTotal(number1 +number2);
  
 
   }
   function ip2(e){
     setnumber2(+e.target.value)
   
-      setTotal(number1 +number2);
+      // setTotal(number1 +number2);
    
    
   }
+  useEffect(()=>{
+    setTotal(number1 +number2);
+  })
 
   return (
     <div id="main">
